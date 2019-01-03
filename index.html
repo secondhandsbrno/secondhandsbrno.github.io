@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secondhandy | Brno</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <script src="scrollreveal.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Jura:500" rel="stylesheet"> 
+    <style>
+        @font-face {
+            font-family: "poppins";
+            src: url("fonts/Poppins-ExtraLight.ttf");
+        }
+        body {
+            overflow-x: hidden;
+            font-family: "poppins", sans-serif, Arial;
+        }
+       * {
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            background-color: rgb(107, 35, 35);
+        }
+        #map {
+width: 100%;
+height: 80vh;
+        }
+        #mapContainer {
+            background-color: grey;
+        }
+
+header {
+    text-align: center;
+    color: rgb(247, 247, 247);
+    height: 50vh;
+    background: url("media/title.jpg");
+    background-size: cover;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}        
+
+header h1 {
+    font-size: 3.8em;
+    font-family: "Pacifico";
+    color: rgb(228, 227, 227);
+
+}
+header h2 {
+    font-size: 1em;
+    font-family: "poppins";
+    position: relative;
+    bottom: 0.7em;
+}
+#text {
+    background-color: rgba(197, 196, 196, 0.4);
+    max-width: 100%;
+    position:relative;
+top: 50%;
+    height: 125px;
+}
+
+#banner,
+#why {
+    min-height: 200px;
+    padding: 2em 7em 1em 7em;
+    font-family: "poppins";
+    background-color: rgb(109, 35, 35);
+    color: white;
+    text-align: justify;
+}
+
+.content {
+    text-align: justify;
+    padding: 0.3em 1.8em;
+}
+
+
+#button {
+    margin: 1em 40%;
+    padding: 1em;
+    background-color: grey;
+    text-align: center;
+    font-family: "Jura";
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: rgb(39, 39, 39);
+    cursor:pointer;
+}
+
+#why a {
+	color: rgb(51, 50, 50);
+}
+#why a:hover {
+    color: rgb(107, 35, 35);
+}
+#why {
+    background-color: grey;
+    padding-bottom: 2em;
+}
+
+h3 {
+    padding: 0.8em;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    color: rgb(214, 213, 213);
+    font-size: 1.5em;
+    font-family: "Jura";
+}
+
+#footer {
+    color: white;
+    font-family: "Jura";
+    padding: 1em 4em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("media/jk.jpg");
+    background-size: cover;
+    height: 37vh;
+   
+}
+#footer p {
+    padding: 0.3em;
+}
+
+input,
+textarea {
+    padding: 0.5em;
+    display: block;
+    margin: 0.5em 2.5em;
+    font-family: "poppins";
+    color: rgb(32, 32, 32);
+    -webkit-box-shadow: 0 1px 2px #777;
+	-moz-box-shadow: 0 2px 1px #777;
+	box-shadow: 0 2px 1px #777;
+}
+
+input {
+    margin: 0.5em 3em;
+    width: 15vw;
+}
+
+textarea {
+    width: 25vw;
+    height: 15vh;
+    resize: none;
+}
+
+#submit {
+    background-color: rgb(192, 190, 190);
+    width: auto;
+    cursor: pointer;
+    font-family: "Bungee";
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+<div id="text">
+<h1>Udržitelné Brno</h1>
+<h2>,,Nejudržitelnější je chodit nahý. Volbou číslo dva jsou secondhandy."</h2>
+</div>
+</header>
+
+<div id="banner">
+    <h3>I sekáče mají vyšší smysl!</h3>
+        <p class="content">Secondhandy nemusí být jen galerií bizárností, co se nosívali v roce 2006, nebo místem, kde jako novodobí lovci hledáme svou kořist mezi stojany s šatními ramínky. Představují nejdostupnější a nejsnadnější možnost, jak se můžeme vymezit vůči současnému modelu fungování módního průmyslu - ten se totiž řadí mezi nejméně udržitelné průmysly celkově.</p>   
+        <p class="content"> Projekt ,,Udržitelné Brno" má za cíl mapovat secondhandy, které stojí za to navštívit a kde by mohl být spokojený i člověk, který je zvyklý nakupovat oblečení v běžných řetězcích. Můžete si udělat přehled, kde co v Brně je a až půjdete kolem, neváhejte a nakoukněte do prodejny! Třeba budete příjemně překvapeni.</p>
+        <p  id="button"><a href="#why">Chci se dozvědět více!</a></p>
+
+
+</div>
+<section id="mapContainer">
+<iframe id="map" src="https://www.google.com/maps/d/u/0/embed?mid=1kqOZLjDyO_fQ8C060vpbznkAoZyD8w7Z"></iframe>
+</section>
+<div id="why">
+<h3>Módní průmysl</h3>
+<ul>
+    <li>je jedním z největších znečišťovatelů životního prostředí.</li>
+    <li>vyrábí 2 milióny tun odpadu každý rok.</li>
+    <li>je velmi energeticky náročný na zdroje. Tak třeba na výrobu jednoho páru džínů padne zhruba 4000 litrů vody.</li>
+    <li>Kvůli neustále zvyšující se míře konzumerismu jsme zaplaveni ohromným přebytkem oblečení, které už nikdo nechce. Proto většina oblečení, co darujeme v dobré víře do kontejnerů ,,na charitu", končí na skládce.</li>
+</ul>
+<br />
+<p>Stále jsou tu zodpovědní výrobci, kteří žijí módou pomalou (slow fashion), v Brně se s některými z nich můžete seznámit například v prodejně <a href="https://restart-brno.cz/">Restart</a>.
+Zajímavou variantou je také <a href="https://www.facebook.com/hadrarnabrno/">Hadrárna Brno</a>, která pořádá pravidelné ,,hadrárny", dny konání zveřejňuje na Facebooku. Možností pro extremisty je naučit se šít (aneb proč nezískat kontrolu nad svým šatníkem a krásný koníček k tomu?), v Brně vám pomůže šicí dílna <a src="http://www.brnosije.cz/">Brno šije</a>.</p>
+<h3>Zajímavé články a odkazy pro čerpání dalších informací:</h3>
+<ul>
+    <li><a href="http://www.bio-info.cz/zpravy/negativni-dopady-fast-fashion">Negativní dopady fast fashion [Bio-info]</a></li>
+    <li><a href="https://www.modnipeklo.cz/clanky/dokumenty-udrzitelna-moda/">Seznam dostupných dokumentů na Youtube o móde[Módní peklo]</a></li>
+    <li><a href="https://www.modnipeklo.cz/clanky/rozhovor-kamila-boudova/">Rozhovor s odbornicí na udržitelnou módu Kamilou Boudovou [Módní peklo]</a></li>
+</ul>
+</div>
+<div id="footer">
+    <p>Chybí váš oblíbený secondhand na mapě? Jaká nehoráznost!</p>
+    <p>Napiště nám a my naši chybu napravíme. :) </p>
+    <form action="https://formspree.io/nataliekacova@jedensvettisnov.cz" method="POST" />
+    <input type="email" name="_replyto" placeholder="Kontakt na vás (nepovinné)">
+    <textarea type="text" placeholder="Váš vzkaz"></textarea>
+    <input type="submit" id="submit" value="Send">
+</form>
+</div>
+      
+<script>
+        window.sr = ScrollReveal(); 
+        sr.reveal("#text h1", {
+            duration: 1000
+        });
+        sr.reveal("#text h2", {
+            duration: 1000,
+            delay: 500
+        });
+        sr.reveal("#button", {
+            duration: 1000,
+            delay: 1000
+        });
+
+        sr.reveal("textarea", {
+            duration: 1000,
+        });
+        sr.reveal("input", {
+            duration: 1000,
+        });
+
+    </script>
+</body>    
+
+</html>
