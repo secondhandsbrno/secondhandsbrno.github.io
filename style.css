@@ -1,0 +1,203 @@
+
+        @font-face {
+            font-family: "poppins";
+            src: url("fonts/Poppins-ExtraLight.ttf");
+        }
+        body {
+            overflow-x: hidden;
+            font-family: "poppins", sans-serif, Arial;
+        }
+       * {
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            background-color: rgb(107, 35, 35);
+        }
+        #map {
+width: 100%;
+height: 80vh;
+        }
+        #mapContainer {
+            background-color: grey;
+        }
+
+header {
+    text-align: center;
+    color: rgb(247, 247, 247);
+    height: 50vh;
+    background: url("media/title.jpg");
+    background-size: cover;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}        
+
+header h1 {
+    font-size: 3.8em;
+    font-family: "Pacifico";
+    color: rgb(228, 227, 227);
+
+}
+header h2 {
+    font-size: 1em;
+    font-family: "poppins";
+    position: relative;
+    bottom: 0.7em;
+}
+#text {
+    background-color: rgba(197, 196, 196, 0.4);
+    max-width: 100%;
+    position:relative;
+top: 50%;
+    height: 125px;
+}
+
+#banner,
+#why {
+    min-height: 200px;
+    padding: 2em 7em 1em 7em;
+    font-family: "poppins";
+    background-color: rgb(109, 35, 35);
+    color: white;
+    text-align: justify;
+}
+
+.content {
+    text-align: justify;
+    padding: 0.3em 1.8em;
+}
+
+
+#button {
+    margin: 1em 40%;
+    padding: 1em;
+    background-color: grey;
+    text-align: center;
+    font-family: "Jura";
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: rgb(39, 39, 39);
+    cursor:pointer;
+}
+
+#why a {
+	color: rgb(51, 50, 50);
+}
+#why a:hover {
+    color: rgb(107, 35, 35);
+}
+#why {
+    background-color: grey;
+    padding-bottom: 2em;
+}
+
+h3 {
+    padding: 0.8em;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    color: rgb(214, 213, 213);
+    font-size: 1.5em;
+    font-family: "Jura";
+}
+
+#footer {
+    color: white;
+    font-family: "Jura";
+    padding: 1em 4em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("media/jk.jpg");
+    background-size: cover;
+    height: 37vh;
+   
+}
+#footer p {
+    padding: 0.3em;
+}
+
+input,
+textarea {
+    padding: 0.5em;
+    display: block;
+    margin: 0.5em 2.5em;
+    font-family: "poppins";
+    color: rgb(32, 32, 32);
+    -webkit-box-shadow: 0 1px 2px #777;
+	-moz-box-shadow: 0 2px 1px #777;
+	box-shadow: 0 2px 1px #777;
+}
+
+input {
+    margin: 0.5em 3em;
+    width: 15vw;
+}
+
+textarea {
+    width: 25vw;
+    height: 15vh;
+    resize: none;
+}
+
+#submit {
+    background-color: rgb(192, 190, 190);
+    width: auto;
+    cursor: pointer;
+    font-family: "Jura";
+}
+
+@media only screen and (max-width: 1250px) {
+    #button {
+        margin: 1em 35%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+#banner,
+#why {
+    padding: 1.5em 3em 1em 3em;
+    font-size: 90%;
+}
+#why ul {
+    padding-left: 1.5em;
+}
+}
+
+@media only screen and (max-width: 560px) {
+#text {
+    font-size: 80%;
+}
+
+input,
+textarea {
+    width: 50vw;
+    margin: 0.5em;
+}
+#footer {
+    padding: 1em;
+}
+
+#banner,
+#why {
+    padding: 1.3em 1.6em;
+}
+}
+
+@media only screen and (max-width: 360px) {
+    * {
+        font-size: 93%;
+    }
+    input,
+    textarea {
+        width: 55vw;
+    }
+    textarea {
+        height: 10vh;
+    }
+}
