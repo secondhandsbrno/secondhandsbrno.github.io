@@ -146,7 +146,7 @@ input {
 
 #textarea {
     width: 25vw;
-    height: 15vh;
+    padding-bottom: 5vh;
     resize: none;
 }
 
@@ -161,6 +161,9 @@ input {
     #button {
         margin: 1em 35%;
     }
+    #textare {
+        width: 40vw;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -172,11 +175,13 @@ input {
 #why ul {
     padding-left: 1.5em;
 }
+
+input,
+#textarea {
+    width: 50vw;
+    margin: 0.5em;
 }
-@media only screen and (max-width: 665px) {
-    #footer {
-        height: 50vh;
-    }
+
 }
 
 @media only screen and (max-width: 560px) {
@@ -184,11 +189,6 @@ input {
     font-size: 80%;
 }
 
-input,
-#textarea {
-    width: 50vw;
-    margin: 0.5em;
-}
 #footer {
     padding: 1em;
 }
@@ -209,6 +209,6 @@ input,
         width: 55vw;
     }
     #textarea {
-        height: 10vh;
+        height: 20vh;
     }
 }
